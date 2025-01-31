@@ -38,15 +38,15 @@
 </head>
 
 <body class="font-sora">
-    <header class="">
-        <nav class="bg-c-bg border-b border-[#111111] md:border-none">
-            <div class="navbar block md:flex container mx-auto px-4 xl:px-20  ">
+    <header class="space-y-8 md:space-y-[76px] mb-20">
+        <nav class="bg-c-bg border-b border-[#111111] md:border-none ">
+            <div class="navbar block md:flex container mx-auto px-4 py-5">
                 <div class="navbar-start flex-row-reverse md:flex-row w-full md:w-1/2 justify-between md:justify-start">
                     <div class="dropdown ">
                         <div tabindex="0" role="button" class="md:mr-3 lg:hidden">
-                            
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="size-6">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                             </svg>
@@ -61,12 +61,12 @@
                     <a class="cursor-pointer">
                         <div class="flex items-center gap-3">
                             <img class="" src="./c1-assets/logo-header.png" alt="">
-                            <h2 class="text-2xl ">Browse<span class="text-c-primary">4</span>Pets</h2>
+                            <h2 class="text-2xl hidden md:block">Browse<span class="text-c-primary">4</span>Pets</h2>
                         </div>
                     </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-[#111111] ">
+                    <ul class="menu menu-horizontal px-1 text-xl font-normal text-[#111111] ">
                         <li><a class="hover:bg-transparent hover:text-c-primary">Find a pet</a></li>
                         <li><a class="hover:bg-transparent hover:text-c-primary">Breeds</a></li>
                         <li><a class="hover:bg-transparent hover:text-c-primary">Contact us</a></li>
@@ -89,12 +89,27 @@
                         </svg>
                     </button>
 
-                    <button class="btn text-black border-c-primary btn-ghost mr-3 px-[30px] ">Login</button>
-                    <button class="btn bg-c-primary text-black btn-ghost px-[30px]">Register</button>
+                    <button class="btn text-black border-c-primary text-xl font-normal btn-ghost mr-3 px-[30px] ">Login</button>
+                    <button class="btn bg-c-primary text-black text-xl font-normal btn-ghost px-[30px]">Register</button>
                 </div>
-
             </div>
         </nav>
+
+        <!-- banner section -->
+        <div class="container mx-auto px-4 ">
+            <div class="min-h-screen bg-[url(./c1-assets/cat-big.png)] bg-no-repeat bg-[100%_auto] bg-[left_calc(0%)_top_calc(70%)] md:bg-left-bottom">
+                <div class=""></div>
+                <div class="">
+                    <div class="">
+                        <h1 class="font-ad-lam-display md:py-6 text-[1.875rem] md:text-[3.5rem]">Pamper Your Pet, <br>Because They Deserve <br> the Bes</h1>
+                        <p class="mb-6 md:text-xl leading-5 md:leading-9 text-gray-600 w-5/6 md:w-5/12">
+                            Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                        </p>
+                        <button class="btn bg-c-primary text-black text-xl font-normal btn-ghost px-[30px]">Find a pet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
